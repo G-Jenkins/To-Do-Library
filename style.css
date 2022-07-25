@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Economica:ital@1&family=Edu+VIC+WA+NT+Beginner&family=Playfair+Display:wght@600&display=swap');
+
+* {
+  margin: 0
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  background-color: #e1e3ea;
+  height: 100vh;
+  font-weight: 600;
+
+
+}
+
+.app {
+  border: solid;
+  border-width: 3px;
+  border-color: #F15BB5;
+  border-radius: .5rem .5rem 0 0;
+  width: 60%;
+  font-family: 'Economica', sans-serif;
+}
+
+@media (max-width:908px) {
+  .app {
+    width: 90%;
+  }
+}
+
+.app h1 {
+  text-shadow: -2px 0 
+  #F15BB5, 0 2px 
+  #F15BB5, 2px 0 
+  #F15BB5, 0 -2px 
+  #F15BB5;
+
+  color: white;
+  font-size: 50px;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: .09rem .09rem 0 0;
+  background-color: #2EC4B6;
+  font-family: 'Economica', sans-serif;
+}
+/* 
+  background-color: #F15BB5;
+
+2EC4B
+*/ 
+
+.app form {
+  display: flex;
+  width: 100%;
+  background-color: #533A71;
+}
+
+.app form input {
+  border: none;
+  background-color: #FFF;
+  font-family: fantasy;
+  font-size: 14px;
+  color: #053C5E;
+  padding: 10px;
+  width: 90%;
+}
+
+.app form button {
+  border: solid;
+  border-width: 2px;
+  border-color: white;
+  color: white;
+  background-color: #2EC4B6;
+  font-size: 25px;
+  font-weight: 600;
+  height: 42px;
+  width: 10%;
+}
+
+.app ul {
+  list-style: none;
+  color: #e0e0e0;
+  padding: 0;
+}
+.app ul li {
+  padding: 10px;
+  background-color: #F15BB5;
+  border-bottom: 1.5px solid #FFF;
+  
+}
+
+.check {
+  width: 0.8em;
+  height: 0.8em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid rgb(255, 255, 255);
+  -webkit-appearance: none;
+}
+
+.check:checked {
+  background-color: #1dd2af;
+}
+
+.task {
+  font-size: 18px;
+  padding: 0 10px;
+  width: fit-content;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: 'Economica', sans-serif;
+}
+
+.task:focus {
+  outline: none;
+}
+
+.app ul li i {
+  float: right;
+  cursor: pointer;
+}
+
+.app ul li i:hover {
+  color: #C2E812
+}
+
+.completed {
+  color: rgba(46, 196, 182, 0.8);
+  text-decoration: line-through;
+}
